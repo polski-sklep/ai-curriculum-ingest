@@ -44,7 +44,7 @@ from ingest import (
 # ---------------------------------------------------------------------------
 
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-# Set TELEGRAM_ALLOWED_USER_ID in .env to the numeric ID of the single user permitted to use this bot (DM @userinfobot to find yours).
+# Set TELEGRAM_ALLOWED_USER_ID in .env to the numeric ID permitted to use this bot (DM @userinfobot to find yours).
 ALLOWED_USER_ID = int(os.environ.get("TELEGRAM_ALLOWED_USER_ID", "0"))
 
 logging.basicConfig(

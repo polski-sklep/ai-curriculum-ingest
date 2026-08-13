@@ -2,7 +2,7 @@
 
 A Telegram bot that ingests AI/ML content from tweets, URLs, screenshots, and raw text, classifies it with Claude, and appends structured entries to a master `curriculum.md` learning document.
 
-Self-hosted. Single user (configured Telegram user ID). No public access, no auth layer beyond the user-ID check.
+Self-hosted. Access is restricted to a configured Telegram user ID. No public access, no auth layer beyond the user-ID check.
 
 ## What it does
 
@@ -47,7 +47,7 @@ playwright install chromium
 cp .env.example .env
 # Then edit .env and set:
 #   TELEGRAM_BOT_TOKEN          (from @BotFather)
-#   TELEGRAM_ALLOWED_USER_ID    (numeric ID of the only user permitted — DM @userinfobot)
+#   TELEGRAM_ALLOWED_USER_ID    (numeric ID permitted to use the bot — DM @userinfobot)
 #   ANTHROPIC_API_KEY           (https://console.anthropic.com/)
 ```
 

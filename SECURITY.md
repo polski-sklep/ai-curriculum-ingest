@@ -29,10 +29,9 @@ commit a secret:
 - No telemetry, no analytics, no third-party trackers. The only outbound
   network traffic is to the APIs documented in the README.
 
-## Single-user posture
+## Access posture
 
-These projects are designed for single-user, self-hosted use. The
-authorisation model is "the configured Telegram user ID is the only allowed
-caller" (or, for the webapp, "Tailscale ACL is the only gate"). Public
-deployment without re-engineering the auth layer is not supported and is
-explicitly out of scope.
+This project is designed for private, self-hosted use. The authorisation model is
+"only the configured Telegram user ID may call the bot." Public deployment
+without re-engineering the auth layer is not supported and is explicitly out of
+scope.
