@@ -1,6 +1,6 @@
 # AI Curriculum Ingest
 
-A single-user Telegram bot that ingests AI/ML content from tweets, URLs, screenshots, and raw text, classifies it with Claude, and appends structured entries to a master `curriculum.md` learning document.
+A Telegram bot that ingests AI/ML content from tweets, URLs, screenshots, and raw text, classifies it with Claude, and appends structured entries to a master `curriculum.md` learning document.
 
 Self-hosted. Single user (configured Telegram user ID). No public access, no auth layer beyond the user-ID check.
 
